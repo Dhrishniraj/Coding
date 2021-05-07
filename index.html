@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js">
-    </script>
-    <title>My first webpage on 'Brackets'
+  <head>
+      <link rel="stylesheet" href="style.css">
+      <script>
+      function setDate() {
+  document.getElementById("date").innerHTML = new Date().toDateString();
+}
+      </script>
+    <title>Blog with photos
     </title>
-    </head>
-    <h1>My first webpage on 'Brackets'
+  </head>
+  <body>
+    <h1>Hello, Welcome To My Photography World!
     </h1>
-    <h2>My name is Dhrishniraj Kashyap
+    <h2>I am Niteen
     </h2>
+    <h4 id="date">
+    </h4>
+    <div class="image-section">
+      <div class="section-style">
+        <img id="image1" src="https://images.unsplash.com/photo-1619905483821-f39cc7291317?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDAxMDY0Mw&ixlib=rb-1.2.1&q=85">
+        </img>
+        <p id="paragraph1">By discovering nature, you discover yourself. Diego Henrique
+        </p>
+    </div>
+    <div class="section-style">
+      <img id="image2" src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+      </img>
+    <p id="paragraph2">Adopt the pace of nature. Her secret is patience. Adam Kool
+    </p>
+    </div>
+  </div>
+<div class="image-section">
+  <div class="section-style">
+    <img id="image3" src="https://images.unsplash.com/photo-1575819719798-83d97dd6949c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnQlMjBldmVyZXN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    </img>
+  <p id="paragraph3">Going to the mountain is going home. Andreas Gaebler
+  </p>
+</div>
+<div class="section-style">
+  <img id="image4" src="https://images.unsplash.com/photo-1503785640985-f62e3aeee448?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dHJlZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+       </img>
+  <p id="paragraph4">Nature is pleased with simplicity. And nature is no dummy. Isaac Newton
+  </p>
+</div>
+</div>
+</body>
 </html>
