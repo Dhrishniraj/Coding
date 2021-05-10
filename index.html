@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
-  <title>My favourite hobby
+<style>
+body{
+  background-color:white;
+  text-align:center;
+}
+#squareimage{
+  width:200px;
+  height:200px;
+}
+.label1{
+  margin-top:30px;
+  font-size:18px;
+}
+#areahtml{
+  margin-top:5px;
+  font-size:18px;
+}
+.label2{
+  margin-top:25px;
+  font-size:18px;
+}
+#perimeterhtml{
+  margin-top:5px;
+  font-size:18px;
+}
+.label3{
+  margin-top:25px;
+  font-size:18px;
+}
+#diagonallengthhtml{
+  margin-top:5px;
+  font-size:18px;
+}
+#Sidelengthinput{
+  margin-top:35px;
+  text-align:center;
+  font-size:18px;
+}
+</style>
+<script>
+var sidelength = Number(document.getElementById("Sidelengthinput").value);
+function calculate() {
+  sidelength = Number(document.getElementById("Sidelengthinput").value);
+  var area = sidelength * sidelength
+  var perimeter = sidelength * 4
+  var diagonallength = Math.sqrt(sidelength * 2)
+  
+document.getElementById("areahtml").innerHTML = area;
+   document.getElementById("perimeterhtml").innerHTML = perimeter;
+  
+document.getElementById("diagonallengthhtml").innerHTML = diagonallength;
+}
+</script>
+  <title>Square Calculator
   </title>
 </head>
   <body>
-  <ul class="menu">
-    <li class="links">About</li>
-    <li class="links">My apps</li>
-    <li class="links">My work</li>
-    <li class="links">Inspiration</li>
-    <li class="links">Contact</li>
-    </ul>
-  <section id="welcome" class="s1">
-    <div>
-      <img id="myimg" src="https://lh3.googleusercontent.com/-3Q-SGLGmRtU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckGoE-1t8uT3P83hCZuQpsmCDispw/s48-c/photo.jpg">
-      </img>
-    </div>
-    <img id="codingimg" src="https://static.thenounproject.com/png/62495-200.png">
-    </img>
-    <h1 id="h1">My favourite hobby is<br/><br/>Coding
+    <h1>Square Calculator
     </h1>
-    <h3 id="h3">I love creating apps
-    </h3>
-    <h4 id="h4">About
-    </h4>
-    <div class="line">
-    </div>
-  </section>
-  <section id="about" class="s2">
-    <p id="paragraph">My hobby is coding new apps and games. Whenever I get time I do coding.<br/><br/>I got this habit when my parents booked a coding class on https://www.whitehatjr.com.<br/><br/>I liked it very much. First, it was very difficult for me. But now it is a piece of cake.<br/><br/>Do you also want to create apps and games? Then book a free coding class on https://www.whitehatjr.com.<br/><br/>There you will learn to code. And you will also be able to create apps and games.
-    </p>
-  </section>
-  </body>
-  </html>
+    <img id="squareimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1200px-Square_-_black_simple.svg.png">
+    </img>
+  <div>
+    <input id="Sidelengthinput" placeholder="Side length" type="number" oninput="calculate()">
+    </input>
+  </div>
+<div class="label1">Area
+</div>
+<label id="areahtml">0
+</label>
+<div class="label2">Perimeter
+</div>
+<label id="perimeterhtml">0
+</label>
+<div class="label3">Diagonal length
+</div>
+<label id="diagonallengthhtml">0
+</label>
+</body>
+</html>
