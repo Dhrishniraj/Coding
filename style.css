@@ -1,37 +1,66 @@
 body{
-  background:linear-gradient(
-#ff0000 0%, #00ff00 50%, #0000ff 100%);
-  background-repeat:no-repeat;
-  text-align:center;
+    margin:0px;
+    padding-top: 800px;
 }
-#codingimg{
-  width:100px;
-  border-radius:50%;
+#TimBlee{
+    width:175px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+#Welcome{
+    position: absolute;
+    overflow: hidden;
+    height: 800px;
+    color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.83;
+    background: linear-gradient(#ff6f00 0%, #ffd900 100%);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
 }
 h1{
-  font-size:35px;
-  line-height:25px;
-  text-shadow:2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: cursive;
+    font-weight: 300;
+}
+#TBL{
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: fantasy; 
+}
+h2{
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: monospace;
+    font-weight: 300;
+}
+#bio{
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
 }
 .line{
-  width:300px;
-  height:5px;
-  background-color:black;
-  margin:20px auto;
-  margin-top:-15px;
+    height: 6px;
+    background-color: darkblue;
+    width: 70px;
+    margin: 20px auto;
 }
-.s2{
-  font-size:20px;
-  line-height:15px;
-  padding:20px;
-  margin-bottom:279px;
+#paragraph{
+    max-width: 450px;
+    margin: 25px auto;
+    font-size: 20px;
+    line-height: 1.8;
 }
-h3{
-  font-size:30px;
-  color:blue;
-}
-h4{
-  font-size:25px;
+.d1{
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
 }
 .menu{
     list-style: none;
@@ -54,7 +83,4 @@ h4{
 }
 .links:hover{
     background-color: black;
-}
-#myimg{
-  width:75px;
 }

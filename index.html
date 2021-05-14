@@ -1,82 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-<style>
-body{
-  background-color:white;
-  text-align:center;
-}
-#squareimage{
-  width:200px;
-  height:200px;
-}
-.label1{
-  margin-top:30px;
-  font-size:18px;
-}
-#areahtml{
-  margin-top:5px;
-  font-size:18px;
-}
-.label2{
-  margin-top:25px;
-  font-size:18px;
-}
-#perimeterhtml{
-  margin-top:5px;
-  font-size:18px;
-}
-.label3{
-  margin-top:25px;
-  font-size:18px;
-}
-#diagonallengthhtml{
-  margin-top:5px;
-  font-size:18px;
-}
-#Sidelengthinput{
-  margin-top:35px;
-  text-align:center;
-  font-size:18px;
-}
-</style>
-<script>
-var sidelength = Number(document.getElementById("Sidelengthinput").value);
-function calculate() {
-  sidelength = Number(document.getElementById("Sidelengthinput").value);
-  var area = sidelength * sidelength
-  var perimeter = sidelength * 4
-  var diagonallength = Math.sqrt(sidelength * 2)
-  
-document.getElementById("areahtml").innerHTML = area;
-   document.getElementById("perimeterhtml").innerHTML = perimeter;
-  
-document.getElementById("diagonallengthhtml").innerHTML = diagonallength;
-}
-</script>
-  <title>Square Calculator
-  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  <title>Tim Berners Lee
+    </title>
 </head>
-  <body>
-    <h1>Square Calculator
-    </h1>
-    <img id="squareimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/1200px-Square_-_black_simple.svg.png">
-    </img>
-  <div>
-    <input id="Sidelengthinput" placeholder="Side length" type="number" oninput="calculate()">
-    </input>
-  </div>
-<div class="label1">Area
-</div>
-<label id="areahtml">0
-</label>
-<div class="label2">Perimeter
-</div>
-<label id="perimeterhtml">0
-</label>
-<div class="label3">Diagonal length
-</div>
-<label id="diagonallengthhtml">0
-</label>
+<body>
+  <ul class="menu">
+    <li class="links">Home</li>
+    <li class="links">My Videos</li>
+    <li class="links">Work</li>
+    <li class="links">Writings</li>
+    <li class="links">Contact</li>
+    </ul>  
+ <section id="Welcome" class="s1">
+    <div class="d1">
+     <img id="TimBlee" src="Sir_Tim_Berners-Lee_(cropped) (1).jpg">
+     <h1>I am<br><span id="TBL">Tim Berners Lee
+         </span>
+     </h1>
+     <h2>I am the founder of www (World Wide Web)
+     </h2>
+     </div>
+    </section>
+    <section id="bio" class="s1">
+        <h1>Hi!
+        </h1>
+        <div class="line"></div>
+        <p id="paragraph">Tim Berners-Lee is a software engineer who invented the Internet (or the World Wide Web) in 1989 while at CERN, the European Particle Physics Laboratory. He is director of the World Wide Web Consortium that he founded and a Professor in the Computer Science Department at the University of Oxford. In 2001 he became a Fellow of the Royal Society and in 2004 he was knighted.<br/><br/>In 1994 Berners-Lee founded the World Wide Web Consortium (W3C) at the Laboratory of Computer Science (LCS) at the Massachusetts Institute of Technology in Boston. It was made up of companies that wanted to work together to create Web standards and also improve the Web. It was quickly agreed that the technology should be free of royalties and patents. Berners-Lee has served as director of this W3C since it was founded. In 1995 Microsoft produced the first version of Internet Explorer and this commercial browser created enormous growth in websites and web users. The Web was first used for e-commerce in 1997.
+        </p>
+    </section>
 </body>
 </html>
