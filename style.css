@@ -1,86 +1,25 @@
-body{
-    margin:0px;
-    padding-top: 800px;
-}
-#TimBlee{
-    width:175px;
-    margin-bottom: 50px;
-    border-radius: 50%;
-}
-#Welcome{
-    position: absolute;
-    overflow: hidden;
-    height: 800px;
-    color: white;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.83;
-    background: linear-gradient(#ff6f00 0%, #ffd900 100%);
-    display: table;
+#app {
     width: 100%;
-    height: 100%;
-    z-index: 9;
+    height: 800px;
+    background-color: aliceblue;
 }
-h1{
-    font-size: 50px;
-    line-height: 1.2;
-    font-family: cursive;
-    font-weight: 300;
-}
-#TBL{
-    font-size: 50px;
-    line-height: 1.2;
-    font-family: fantasy; 
-}
-h2{
-    font-size: 50px;
-    line-height: 1.2;
-    font-family: monospace;
-    font-weight: 300;
-}
-#bio{
-    padding: 40px;
+
+.container
+{
     text-align: center;
-    font-size: 40px;
 }
-.line{
-    height: 6px;
-    background-color: darkblue;
-    width: 70px;
-    margin: 20px auto;
+
+/*Start your code from here */
+#myCarousel,#myCarousel2{
+    background-color: red;
 }
-#paragraph{
-    max-width: 450px;
-    margin: 25px auto;
+#myCarousel img{
+    width: 300px;
+    margin-top: 35px;
+}
+.carousel-inner p{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: yellow;
     font-size: 20px;
-    line-height: 1.8;
-}
-.d1{
-    display: table-cell;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-}
-.menu{
-    list-style: none;
-    font-family: sans-serif;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    z-index: 10;
-    cursor: pointer;
-}
-.links{
-    float: left;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
-    font-family: inherit;
-    font-size: 20px;
-}
-.links:hover{
-    background-color: black;
 }

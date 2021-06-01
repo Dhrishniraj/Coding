@@ -1,282 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-    html{
-  scroll-behavior: smooth;  
-}
-body{
-  background:linear-gradient(
-orange 0%, #ffffff 50%, #0000ff 100%);
-  background-repeat:no-repeat;
-  text-align:center;
-}
-#codingimg{
-  width:100px;
-  border-radius:50%;
-}
-h1{
-  font-size:35px;
-  line-height:25px;
-  text-shadow:2px 2px rgba(0, 0, 0, 0.5);
-}
-.line{
-  width:300px;
-  height:5px;
-  background-color:black;
-  margin:20px auto;
-  margin-top:-15px;
-}
-.section{
-  font-size:20px;
-  line-height:15px;
-  padding:20px;
-  margin-bottom:279px;
-  margin-top:300px;
-}
-h3{
-  font-size:30px;
-  color:blue;
-}
-.h4{
-  font-size:30px;
-  margin-top:-10px;
-}
-.menu{
-    position: fixed;
-    background: white;
-    width: 100%;
-    margin-top: -8px;
-    z-index: 10;
-    margin-left: -10px;
-}
-.links{
-    display: inline;
-    padding-left: 33px;
-    padding-right: 25px;
-    font-size: 25px;
-}
-.links:hover{
-    background-color: yellowgreen;
-    text-decoration: underline;
-    font-size:30px;
-}
-#myimg{
-   width:75px;
-   margin-top:50px;
-   text-align: center auto;
-}
-.name{
-  color:graytext;
-  font-size:25px;
-  font-weight:bold;
-  margin-top:10px;
-  margin-bottom:20px;
-}
-p{
-  margin-top:40px;
-}
-#TaE{
-  margin-top:40px;
-}
-.section2{
-  background-color:white;
-}
-.paragraph{
-  font-size:24px;
-}
-.anchortag{
-  color:black;
-  text-decoration:none;
-  font-family: inherit;
-}
-.panchor{
-  text-decoration:none;
-}
-.panchor:hover{
-  text-decoration:underline;
-}
-#DK{
-  margin:40px;
-}
-.quoteimg{
-  width:600px;
-}
-#firstimg{
-  margin-top:40px;
-  margin-right:20px;
-}
-#lastimg{
-  margin-top:30px;
-}
-#mywork{
-  margin-top:300px;
-}
-#adress{
-  color:white;
-  margin-left:0px;
-  text-align:left;
-  line-height:25px;
-}
-#phonenumbers{
-  color:white;
-  margin-left:0px;
-  text-align:left;
-  margin-top:50px;
-  line-height:25px;
-}
-#iframecontactmaps{
-  margin-top:40px;
-}
-.quoteimg{
-  width:500px;
-}
-#DK{
-  text-align:center;
-  width:800px;
-}
-h2{
-  font-size:60px;
-  color:whitesmoke;
-}
-.insdiv{
-  margin-top: 40px;            
-}
-.insimg{
-  width:400px;
-  margin: 25px;
-  transition: transform 0.2s;
-  border: 10px solid #AAAAAA;
-}
-.insimg:hover{
-  transform: scale(0.9);
-}
-.social-media{
-  color:white;
-  line-height:25px;
-}
-#contact iframe{
-  width:100%;
-}
-    </style>
-    <script>
-function Stevejobs() {
-  window.alert("Steve Jobs");
-}
-function Mariaclawe() {
-  window.alert("Maria Klawe");
-}
-    </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>My favourite hobby
-  </title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-  <body>
-    <center>
-  <ul class="menu">
-    <a href=#about class="anchortag"><li id="About" class="links">About</li></a>
-    <a href=#myapps class="anchortag"><li id="Myapps" class="links">My apps</li></a>
-    <a href=#mywork class="anchortag"><li id="Mywork" class="links">My work</li></a>
-    <a href=#inspiration class="anchortag"><li id="Inspiration" class="links">Inspiration</li></a>
-    <a href=#quotes class="anchortag"><li id="Quotes" class="links">Quotes</li></a>
-    <a href=#contact class="anchortag"><li id="Contact" class="links">Contact</li></a>
-    </ul>
-    </center>
-  <section id="welcome" class="s1">
-    <div>
-      <img id="myimg" src="https://lh3.googleusercontent.com/-3Q-SGLGmRtU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckGoE-1t8uT3P83hCZuQpsmCDispw/s48-c/photo.jpg">
-    <div class="name">
-      <label id="name">My name is Dhrishniraj Kashyap
-      </label>
-    </div>
-      </div>
-    <img id="codingimg" src="https://static.thenounproject.com/png/62495-200.png">
-    <h1 id="h1">My favourite hobby is<br/><br/>Coding
-    </h1>
-    <h3 id="h3">I love creating apps
-    </h3>
-      </section>
-  <section id="about" class="section">
-        <h4 class="h4">About
-    </h4>
-    <div class="line">
-    </div>
-    <p id="paragraph">My hobby is coding new apps and games. Whenever I get time I do coding.<br/><br/>I got this habit when my parents booked a coding class on <a class="panchor" href="https://www.whitehatjr.com" target="_blank">https://www.whitehatjr.com</a>.<br/><br/>I liked it very much. First, it was very difficult for me. But now it is a piece of cake.<br/><br/>Do you also want to create apps and games? Then book a free coding class on <a class="panchor" href="https://www.whitehatjr.com" target="_blank">https://www.whitehatjr.com</a>.<br/><br/>There you will learn to code. And you will also be able to create apps and games.
-    </p>
-  </section>
-<section id="myapps" class="s3">
-<h4 class="h4">My apps
-  </h4>
-  <div class="line">
-  </div>
-  <section class="section2">
-       <iframe id="TaE" width="900" height="1000" src="https://codepen.io/Dhrishniraj/full/MWpWEXJ" title="Thomas Alva Edison" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="paragraph">Thomas Edison
-    </p>
-  </section>
-        <br>
-  <section class="section2">
-        <iframe width="900" height="1000" src="https://codepen.io/Dhrishniraj/full/qBRzezy" title="Blog with photos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="paragraph">Blog with Photos
-    </p>
-  </section>
-  <br>
-  <section class="section2">
-  <iframe width="900" height="1000" src="https://codepen.io/Dhrishniraj/full/XWpxaYK" title="Facts about Sun and Earth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="paragraph">Facts about Sun and Earth
-    </p>
-  </section>
-  <br>
-  <section class="section2">
-  <iframe width="900" height="1000" src="https://codepen.io/Dhrishniraj/full/XWpOovv" title="Farming Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="paragraph">Farming Calculator
-    </p>
-  </section>
-    <br>
-  <section class="section2">
-  <iframe width="900" height="1000" src="https://codepen.io/Dhrishniraj/full/RwKdbPV" title="Square Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="paragraph">Square Calculator
-    </p>
-</section>
-  </section>
-  <section id="mywork" class="section">
-    <h4 class="h4">My work
-    </h4>
-    <div class="line">
-    </div>
-    <iframe id="DK" width="810" height="900" src="https://codepen.io/Dhrishniraj/full/bGqwGeL" title="My work" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<body>
+
+<div class="container">
+
+    <section id="app">
+        <h1>Apps</h1>
+        <div class="line"></div>
+        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe>
+        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
     </section>
-    <section id="inspiration" class="section">
-     <h4 class="h4">Inspiration
-      </h4>
-      <div class="line">
-      </div>
-        <div class="insdiv">
-            <a href="https://himanshusingh97.github.io/" target="_blank"><img id="Himanshusingh" src="Himanshu%20Singh.jpg" class="insimg"></img></a>
-        <a href="https://www.gatesnotes.com/" target="_blank"><img id="Billgates" src="Bill%20Gates.jpg" class="insimg"></img></a>
+
+<!--
+Start your code from here
+-->
+<section id="games">
+    <h2>Click on the games to explore</h2>
+    <h5>These games are made on game lab. Click on a game to play.</h5>
+    <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="item active">
+        <center>
+            <a href="" target="_blank">
+            <img src="Winne_Pooh.png" class="img-responsive">
+            </a>
+            <div class="carousel-content">
+            <p>Winnie_Pooh</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <a href="" target="_blank">
+            <img src="Car_game.png" class="img-responsive">
+            </a>
+            <div class="carousel-content">
+            <p>Car_Game</p>
+            </div>
+            </center>
+        </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+        
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+    </div>
+    </section>
+    <section id="chatbot">
+    <h2>Explore these chatbots</h2>
+        <h5>These chatbots are made on dialogflow</h5>
+        <div id="myCarousel2" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+            <center>
+                <iframe height="430" width="350" src="https://bot.dialogflow.com/2c969f70-2cf9-4e64-b7de-45d2984b4aa1"></iframe>
+                <div class="carousel-content">
+                <p>Albert_Einstein</p>
+                </div>
+                </center>
+            </div>
+            <div class="item">
+            <center>
+                <iframe height="430" width="350" src="https://bot.dialogflow.com/17fc2358-d3b0-45c2-bc45-9e3e6d892f9b"></iframe>
+                </center>
+            </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+        
+            <a class="right carousel-control" href="#myCarousel2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
         </div>
     </section>
-  <section id="quotes" class="section">
-    <h4 class="h4">Quotes
-    </h4>
-    <div class="line">
-    </div>
-    <img id="firstimg"class="quoteimg" src="https://i.pinimg.com/originals/87/df/2e/87df2e2e9f75ee63c0463bfe2c9b7271.jpg" onclick="Stevejobs()">
-  <img id="lastimg" class="quoteimg" src="https://quotefancy.com/media/wallpaper/3840x2160/2129691-Maria-Klawe-Quote-Coding-is-today-s-language-of-creativity-All-our.jpg" onclick="Mariaclawe()">
-  </section>
-    <section id="contact" class="section">
-    <h4 class="h4">Contact
-    </h4>
-    <div class="line">
-    </div>
-      <iframe id="iframecontactmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014.7286062360133!2d90.99136442518407!3d26.32295299861212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE5JzIyLjYiTiA5MMKwNTknMzEuMiJF!5e1!3m2!1sen!2sin!4v1622014676277!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <p id="adress">S/O Dr. Anupam Das, Opp. Staff Quarter, <br>Residents and Demonstrators Quarter, FAAMCH, Barpeta, Dis- Barpeta, <br>Assam (781301)
-      </p>
-      <p id="phonenumbers">+917002796232<br>+919854037156<br>+919365368571
-      </p>
-      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnqGNMpjCtMjsHXNcthSwfcpPMbLsKMswrMQBZldrbcZMrMCnRHkHsmqRRSCgnBqRtLlzh" class="social-media" target="_blank"><i class="fa fa-envelope">&nbsp;&nbsp;<span class="span">anupam.dr6@gmail.com</span></i></a><br><a href="https://www.instagram.com/anupam.dr6/" class="social-media" target="_blank"><i class="fa fa-instagram">&nbsp;&nbsp;<span class="span">anupam.dr6</span></i></a>
-    </section>
-<h2>THE END
-  </h2>
-  </body>
-  </html>
+</div>
+
+</body>
+</html>
