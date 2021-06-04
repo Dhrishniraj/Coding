@@ -1,49 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-
-    <section id="app">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
+<html>
+  <head>
+      <style>
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+}
+.menu{
+    position: fixed;
+    background: black;
+    width: 100%;
+    margin-top: -8px;
+    z-index: 10;
+    margin-left: -7.6px;
+}
+.navigator{
+  color:skyblue;
+  text-decoration:none;
+  font-family: inherit;
+}
+.links{
+    display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-size: 25px;
+}
+.links:hover{
+    background-color: green;
+    text-decoration: underline;
+    font-size:30px;
+}
+#gifanimated{
+    width: 80%;
+    margin-top: 50px;
+}
+.gridviewdiv{
+    width: 100%;              
+}
+.imggrid{
+    width: 20%;              
+}
+.line{
+    width:300px;
+    height:5px;
+    background-color:black;
+    margin:20px auto;
+    margin-top:-15px;
+}
+#div{
+    margin-top:40px;              
+}
+#gridview{
+    margin-top:55px;
+}
+#myCarousel{
+    margin-top:40px;              
+}
+#slideview{
+    margin-top:55px;
+}
+.carousel-inner img{
+    width: 75%;             
+}
+.carousel-inner p{
+    font-size: 20px;             
+}
+      </style>
+    <title>Photo Gallery
+    </title>
+  </head>
+  <body>
+    <center>
+    <ul class="menu">
+      <a href=#home class="navigator"><li class="links">Home</li></a>
+      <a href=#gridview class="navigator"><li class="links">Grid view</li></a>
+      <a href=#slideview class="navigator"><li class="links">Slide view</li></a>
+      </ul>
+    </center>
+    <section id="home" class="section">
+      <img id="gifanimated" src="flowers.gif">
     </section>
-
-<!--
-Start your code from here
--->
-<section id="games">
-    <h2>Click on the games to explore</h2>
-    <h5>These games are made on game lab. Click on a game to play.</h5>
-    <div id="myCarousel" class="carousel slide">
+      <section id="gridview" class="section">
+      <h2>Grid view</h2>
+      <div class="line"></div>
+      <div id="div" class="gridviewdiv">
+      <img class="imggrid" src="blue.jpg">
+      <img class="imggrid" src="Orange.png">
+      <img class="imggrid" src="Pink%20tulip.jpg">
+      <img class="imggrid" src="purple.jpg">
+      </div><br>
+      <div class="gridviewdiv">
+      <img class="imggrid" src="Red%20rose.jpg">
+      <img class="imggrid" src="violet.jpg">
+      <img class="imggrid" src="White.jpg">
+      <img class="imggrid" src="yellow.jpg">
+      </div>
+      </section>
+      <section id="slideview" class="section">
+      <h2>Slide view</h2>
+      <div class="line"></div>
+      <div id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
         <center>
-            <a href="" target="_blank">
-            <img src="Winne_Pooh.png" class="img-responsive">
-            </a>
+            <img src="Orange.png" class="img-responsive">
             <div class="carousel-content">
-            <p>Winnie_Pooh</p>
+            <p>Orange flower</p>
             </div>
             </center>
         </div>
         <div class="item">
         <center>
-            <a href="" target="_blank">
-            <img src="Car_game.png" class="img-responsive">
-            </a>
+            <img src="blue.jpg" class="img-responsive">
             <div class="carousel-content">
-            <p>Car_Game</p>
+            <p>Blue flower</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <img src="Pink%20tulip.jpg" class="img-responsive">
+            <div class="carousel-content">
+            <p>Pink tulip</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <img src="purple.jpg" class="img-responsive">
+            <div class="carousel-content">
+            <p>Purple flower</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <img src="Red%20rose.jpg" class="img-responsive">
+            <div class="carousel-content">
+            <p>Red rose</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <img src="violet.jpg" class="img-responsive">
+            <div class="carousel-content">
+            <p>Violet flower</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <img src="White.jpg" class="img-responsive">
+            <div class="carousel-content">
+            <p>White jasmine</p>
+            </div>
+            </center>
+        </div>
+        <div class="item">
+        <center>
+            <img src="yellow.jpg" class="img-responsive">
+            <div class="carousel-content">
+            <p>Sunflower</p>
             </div>
             </center>
         </div>
@@ -52,32 +172,6 @@ Start your code from here
         
         <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
     </div>
-    </section>
-    <section id="chatbot">
-    <h2>Explore these chatbots</h2>
-        <h5>These chatbots are made on dialogflow</h5>
-        <div id="myCarousel2" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="item active">
-            <center>
-                <iframe height="430" width="350" src="https://bot.dialogflow.com/2c969f70-2cf9-4e64-b7de-45d2984b4aa1"></iframe>
-                <div class="carousel-content">
-                <p>Albert_Einstein</p>
-                </div>
-                </center>
-            </div>
-            <div class="item">
-            <center>
-                <iframe height="430" width="350" src="https://bot.dialogflow.com/17fc2358-d3b0-45c2-bc45-9e3e6d892f9b"></iframe>
-                </center>
-            </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-        
-            <a class="right carousel-control" href="#myCarousel2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-        </div>
-    </section>
-</div>
-
-</body>
+      </section>
+  </body>
 </html>
