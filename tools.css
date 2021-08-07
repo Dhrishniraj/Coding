@@ -1,0 +1,58 @@
+.hover-a{
+    text-decoration: none;
+}
+.hover-a:hover{
+    text-decoration: underline;
+}
+left{
+    text-align: left;
+}
+right{
+    text-align: right;
+}
+justify{
+    text-align: justify;
+}
+.text-success{
+    color: green;
+}
+.center-a{
+    text-align: center;
+}
+.passage-left{
+    text-align: left;
+}
+.passage-right{
+    text-align: right;
+}
+.account-google_img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.hr-100{
+    width: 100%;
+}
+.body-center{
+    text-align: center;
+}
+heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+heading hr{
+    width: 100%;
+}
+description{
+    text-align: left;
+}
+.img_elliptical{
+    border-radius: 50%;
+}
+a img{
+  transition: transform 0.2s;
+}
+a img:hover{
+  transform: scale(0.9);
+}
