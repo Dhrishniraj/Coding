@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="Fictional_flag_of_the_Mughal_Empire.svg">
-    <title>Mughal Empire</title>
-  </head>
-  <body style="text-align: center;">
-    <script>
-      var photos = ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Babur_of_India.jpg/220px-Babur_of_India.jpg", "https://today.salamweb.com/wp-content/uploads/2020/11/humayun.png", "https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/201908/akbar-x600.jpeg?y2qw75NXxxu3vb7tg.yQM7BSWrkf8OjD", "https://upload.wikimedia.org/wikipedia/commons/8/8d/Jahangircrop.jpeg", "https://www.tajmahal.org.uk/gifs/shah-jahan.jpg", "http://www.jagranjosh.com/imported/images/E/Current%20Affairs/Dara-Shikoh.jpg", "https://lh3.googleusercontent.com/proxy/giI9T8M6987PTg8OJOMmvqnfvF6bm3KuxpfXB0RM8GEe7FwNwkTGdPScKPF3gjwoMEp9HSWzfdg-LacLkHpyKL50sMJCQkpBCjGEPNWaLQlQB1IUFVRL", "https://upload.wikimedia.org/wikipedia/commons/3/37/Bahadur_Shah%2C_ca._1670%2C_Biblioth%C3%A8que_nationale_de_France%2C_Paris.jpg", "https://upload.wikimedia.org/wikipedia/commons/8/85/Jahandar_Shah%2C_Mughal_Emperor..jpg", "https://upload.wikimedia.org/wikipedia/commons/b/b4/The_Emperor_Farrukhsiyar_on_his_balcony_1715-1719%2C_Biblioth%C3%A8que_nationale_de_France%2C_Paris.jpg", "https://upload.wikimedia.org/wikipedia/commons/1/17/Emperor_Rafi_Uddar_Jat.jpg", "https://upload.wikimedia.org/wikipedia/commons/0/08/Shah_Jahan_II_of_India.jpg", "https://upload.wikimedia.org/wikipedia/commons/7/7b/Muhammad_Shah_of_Mughal.jpg", "https://upload.wikimedia.org/wikipedia/commons/6/6f/The_Emperor_Ahmad_Shah%2C_equestrian%2C_in_the_hunting_field_1750_San_Diego_Museum_of_Art.jpg", "https://upload.wikimedia.org/wikipedia/commons/1/10/Shah_Jahan_III_of_India.jpg", "https://upload.wikimedia.org/wikipedia/commons/f/fb/Brooklyn_Museum_-_Emperor_Alamgir_II_-_Sukha_Luhar.jpg", "https://upload.wikimedia.org/wikipedia/commons/a/a2/Shah_Alam_II%2C_1790s.jpg", "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bidar_Bakht_%28cropped%29_%28cropped%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/6/66/Akbar_Shah_II_of_India.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bahadur_Shah_II.jpg/220px-Bahadur_Shah_II.jpg"];
-      var names = ["Babur", "Humayun", "Akbar", "Jahangir", "Shah Jahan", "Dara Shikoh", "Aurangzeb", "Bahadur Shah I", "Jahandar Shah", "Farrukhsiyar", "Rafi ud-Darajat", "Shah Jahan II", "Muhammad Shah", "Ahmad Shah Bahadur", "Shah Jahan III", "Alamgir II", "Shah Alam II", "Bidar Bakht", "Akbar II", "Bahadur Shah Zafar"];
-      var Updatedimage = [photos];
-      var Updatednames = [names];
-      var num = -1
-      function Next(){
-        num = num + 1
-        if (num > 20){
-          num = 0
-        }
-        document.getElementById("img").src=photos[num];
-        document.getElementById("name").innerHTML=names[num];
-      }
-    </script>
-    <img style="width: 40%;" src="Fictional_flag_of_the_Mughal_Empire.svg" id="img"><br><br>
-    <label id="name" style="font-size: 20px;"></label><br><br><br>
-    <button onclick="Next()" style="cursor: pointer; border-width: 0px; font-size: 18px; background-color: aquamarine;">Next</button>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h2>List of students in my class</h2>
+        <div>
+            <span>1</span>
+            <input type="text" id="student1" placeholder="Name of the student"><br>
+            <span>2</span>
+            <input type="text" id="student2" placeholder="Name of the student"><br>
+            <span>3</span>
+            <input type="text" id="student3" placeholder="Name of the student"><br>
+            <span>4</span>
+            <input type="text" id="student4" placeholder="Name of the student"><br>
+        </div><br><br>
+        <button onclick="submit()" id="submit">Submit</button>
+        <div id="students_names"></div>
+        <button id="sorting" onclick="sorting()">Sort</button>
+    </body>
 </html>
