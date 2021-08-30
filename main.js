@@ -1,49 +1,27 @@
-var names_of_people = [];
-    
-function submit()
-{
-    var GuestName = document.getElementById("name1").value;
-	// use the push function as - names_of_people.push(GuestName);
-	console.log(GuestName);    
-	names_of_people.push(GuestName);
-    console.log(names_of_people);
-    var lenght_of_name = names_of_people.length;
-    console.log(lenght_of_name);
-	document.getElementById("display_name").innerHTML=names_of_people;
-   }
+menu_list_array = ["Chicken Tandoori", "Deluxe Veggie Pizza", "Paneer Tikka Pizza", "Veg Extravaganza Pizza", "Veg Margherita Pizza", "Veg Supreme Pizza", "Mexican Delight Pizza", "Spicy Treat Pizza", "Cheese Burst Pizza", "Classic Margherita Pizza", "Char Grilled Pizza"];
+function getmenu(){
+var htmldata="<h1>Menu</h1>"
+menu_list_array.sort();
+        for(var i=0;i<menu_list_array.length;i++){
+            htmldata=htmldata + menu_list_array[i] + '<br>'
+            document.getElementById("display_menu").innerHTML = htmldata; 
+        }
+}
 
+function add_item(){
+var htmldata;
+var item=document.getElementById("add_item").value;
+menu_list_array.sort();
+        htmldata=""
+        for(var i=0;i<menu_list_array.length;i++){
+            htmldata=htmldata+menu_list_array[i]+'<br>';
+        }
+         document.getElementById("display_addedmenu").innerHTML = htmldata;		
+      }
 
-
-function show()
-{
-	var i= names_of_people.join("<br>");
-	console.log(names_of_people);
-	document.getElementById("p1").innerHTML=i.toString();
-	document.getElementById("sort_button").style.display="block";
-	// display the name in the id= sort_button
-	}
-
-
-function sorting()
-	{
-		names_of_people.sort()
-		var i= names_of_people.join("<br>");
-		console.log(names_of_people);		
-		document.getElementById("sorted").innerHTML=i.toString();
-		}
-
-
-function searching()
-{
-	var s= document.getElementById("s1").value;
-	var found=0;
-	var j;
-	for(j=0; j<names_of_people.length; j++)
-		{
-			if(s==names_of_people[j]){
-				found=found+1;
-			}	
-		}
-	document.getElementById("p2").innerHTML="name found "+found+" time/s";
-	console.log("found name "+found+" time/s");
+function add_top(){
+    var item=document.getElementById("add_item").value;
+    menu_list_array.push(item);
+	add_item();
+    document.getElementById("menu_list").innerHTML="Show Updated Menu";
 }
