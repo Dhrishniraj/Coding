@@ -1,27 +1,32 @@
-menu_list_array = ["Chicken Tandoori", "Deluxe Veggie Pizza", "Paneer Tikka Pizza", "Veg Extravaganza Pizza", "Veg Margherita Pizza", "Veg Supreme Pizza", "Mexican Delight Pizza", "Spicy Treat Pizza", "Cheese Burst Pizza", "Classic Margherita Pizza", "Char Grilled Pizza"];
-function getmenu(){
-var htmldata="<h1>Menu</h1>"
-menu_list_array.sort();
-        for(var i=0;i<menu_list_array.length;i++){
-            htmldata=htmldata + menu_list_array[i] + '<br>'
-            document.getElementById("display_menu").innerHTML = htmldata; 
-        }
-}
-
-function add_item(){
-var htmldata;
-var item=document.getElementById("add_item").value;
-menu_list_array.sort();
-        htmldata=""
-        for(var i=0;i<menu_list_array.length;i++){
-            htmldata=htmldata+menu_list_array[i]+'<br>';
-        }
-         document.getElementById("display_addedmenu").innerHTML = htmldata;		
-      }
-
-function add_top(){
-    var item=document.getElementById("add_item").value;
-    menu_list_array.push(item);
-	add_item();
-    document.getElementById("menu_list").innerHTML="Show Updated Menu";
-}
+    canvas = document.getElementById("myCanvas");
+    ctx = canvas.getContext("2d");
+    var color="Blue"
+    ctx.beginPath();
+    ctx.strokeStyle=color;
+    ctx.lineWidth=5;
+    ctx.arc(250, 100, 50, 0, 2*Math.PI);
+    ctx.stroke();
+    var color="Black"
+    ctx.beginPath();
+    ctx.strokeStyle=color;
+    ctx.lineWidth=5;
+    ctx.arc(400, 100, 50, 0, 2*Math.PI);
+    ctx.stroke();
+    var color="Yellow"
+    ctx.beginPath();
+    ctx.strokeStyle=color;
+    ctx.lineWidth=5;
+    ctx.arc(325, 150, 50, 0, 2*Math.PI);
+    ctx.stroke();
+    var color="Red"
+    ctx.beginPath();
+    ctx.strokeStyle=color;
+    ctx.lineWidth=5;
+    ctx.arc(550, 100, 50, 0, 2*Math.PI);
+    ctx.stroke();
+    var color="Green"
+    ctx.beginPath();
+    ctx.strokeStyle=color;
+    ctx.lineWidth=5;
+    ctx.arc(475, 150, 50, 0, 2*Math.PI);
+    ctx.stroke();
