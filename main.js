@@ -1,44 +1,106 @@
-var last_position_of_x, last_position_of_y;
+canvas = document.getElementById("myCanvas");
+ctx = canvas.getContext("2d");
 
-    canvas = document.getElementById('myCanvas');
-    ctx = canvas.getContext("2d");
-    
-    color = "black";
-    width_of_line = 2;
-    var width = screen.width;
-    var neww = screen.width - 70;
-    var newh = screen.height - 300;
+greencar_width = 75;
+greencar_height = 120;
 
-    if(width < 992){
-      document.getElementById("myCanvas").width=neww;
-      document.getElementById("myCanvas").height=newh;
-      document.body.style.overflow="hidden";
-    }
-    canvas.addEventListener("touchstart", f1);
-    function f1(e){
-      console.log("touchstart");
-      color = document.getElementById("color").value;
-      width_of_line = document.getElementById("width_of_line").value;
-      last_position_of_x = e.touches[0].clientX - canvas.offsetLeft;
-      last_position_of_y = e.touches[0].clientY - canvas.offsetTop;
-    }
-    canvas.addEventListener("touchmove", f2);
-    function f2(e){
-      console.log("touchmove");
-      current_position_of_touch_x = e.touches[0].clientX - canvas.offsetLeft;
-      current_position_of_touch_y = e.touches[0].clientY - canvas.offsetTop;
-      ctx.beginPath();
-        ctx.strokeStyle = color;
-        ctx.lineWidth = width_of_line;
+background_image = "parkingLot.jpg";
+greencar_image = "car2.png";
 
-        console.log("Last position of x and y coordinates = ");
-        console.log("x = " + last_position_of_x + "y = " + last_position_of_y);
-        ctx.moveTo(last_position_of_x, last_position_of_y);
+greencar_x = 5;
+greencar_y = 220;
 
-        console.log("Current position of x and y coordinates = ");
-        console.log("x  = " + current_position_of_touch_x + "y = " + current_position_of_touch_y);
-        ctx.lineTo(current_position_of_touch_x, current_position_of_touch_y);
-        ctx.stroke();
-        last_position_of_x = current_position_of_touch_x; 
-        last_position_of_y = current_position_of_touch_y;
-        }
+function add() {
+	background_imgTag = new Image();
+	background_imgTag.onload = uploadBackground;
+	background_imgTag.src = background_image;
+
+	greencar_imgTag = new Image();
+	greencar_imgTag.onload = uploadgreencar;
+	greencar_imgTag.src = greencar_image;
+}
+
+function uploadBackground() {
+	ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
+}
+
+function uploadgreencar() {
+	ctx.drawImage(greencar_imgTag, greencar_x, greencar_y, greencar_width, greencar_height);
+}
+
+
+window.addEventListener("keydown", my_keydown);
+
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+		if(keyPressed == '38')
+		{
+			up();
+			console.log("up");
+		}
+	
+		if(keyPressed == '40')
+		{
+			down();
+			console.log("down");
+		}
+		
+		if(keyPressed == '37')
+		{
+			left();
+			console.log("left");
+		}
+	
+		if(keyPressed == '39')
+		{
+			right();
+			console.log("right");
+		}
+		
+		
+}
+
+maxdown = canvas.height - (greencar_height + 70);
+maxright = canvas.width - (greencar_width + 15);
+
+function up()
+{
+	if(greencar_y >= 70) {
+		greencar_y = greencar_y - 10;
+		console.log("When up arrow is pressed, x = " + greencar_x + " | y = " + greencar_y);
+		uploadBackground();
+		uploadgreencar();
+	}
+}
+
+function down()
+{
+	if(greencar_y <= maxdown) {
+		greencar_y = greencar_y + 10;
+		console.log("When down arrow is pressed, x = " + greencar_x + " | y = " + greencar_y);
+		uploadBackground();
+		uploadgreencar();
+	}
+}
+
+function left()
+{
+	if(greencar_x >= 10) {
+		greencar_x = greencar_x - 10;
+		console.log("When left arrow is pressed, x = " + greencar_x + " | y = " + greencar_y);
+		uploadBackground();
+		uploadgreencar();
+	}
+}
+
+function right()
+{
+	if(greencar_x <= maxright) {
+		greencar_x = greencar_x + 10;
+		console.log("When right arrow is pressed, x = " + greencar_x + " | y = " + greencar_y);
+		uploadBackground();
+		uploadgreencar();
+	}
+}
