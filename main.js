@@ -32,7 +32,7 @@ console.log(keyPressed);
 	if(keyPressed == "82")
 	{
 		block_x = 10;
-		new_image("rr.jpg");
+		new_image("rr.png");
 	}
 	if(keyPressed == "71")
 	{
